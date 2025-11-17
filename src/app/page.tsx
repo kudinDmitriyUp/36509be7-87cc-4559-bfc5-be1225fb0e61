@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleMinimal from "@/components/navbar/NavbarStyleMinimal";
@@ -7,13 +7,12 @@ import TagAbout from "@/components/sections/about/TagAbout";
 import FeatureCardFive from "@/components/sections/feature/FeatureCardFive";
 import ProductCardOne from "@/components/sections/product/ProductCardOne";
 import PricingCardTwo from "@/components/sections/pricing/PricingCardTwo";
-import MetricCardOne from "@/components/sections/metric/MetricCardOne";
 import TeamCardOne from "@/components/sections/team/TeamCardOne";
 import TestimonialCardTwo from "@/components/sections/testimonial/TestimonialCardTwo";
 import FaqBase from "@/components/sections/faq/FaqBase";
 import ContactCenterForm from "@/components/sections/contact/ContactCenterForm";
 import FooterSocial from "@/components/sections/footer/FooterSocial";
-import { BarChart3, BookOpen, Brain, Building, DollarSign, GraduationCap, HelpCircle, Instagram, Linkedin, MessageSquare, PlayCircle, Smartphone, Sparkles, Star, TrendingUp, Twitter, Users, Youtube } from "lucide-react";
+import { BarChart3, BookOpen, Brain, Building, DollarSign, GraduationCap, HelpCircle, Instagram, Linkedin, MessageSquare, PlayCircle, Smartphone, Sparkles, Star, TrendingUp, Twitter, Users, Youtube, Award } from "lucide-react";
 
 export default function Home() {
   return (
@@ -21,12 +20,12 @@ export default function Home() {
       defaultButtonVariant="text-stagger"
       defaultTextAnimation="entrance-slide"
       borderRadius="pill"
-      contentWidth="default"
-      sizing="default"
-      background="default"
-      cardStyle="shadow"
-      primaryButtonStyle="shadow"
-      secondaryButtonStyle="solid-border"
+      contentWidth="medium"
+      sizing="medium"
+      background="circleGradient"
+      cardStyle="glass-elevated"
+      primaryButtonStyle="gradient"
+      secondaryButtonStyle="glass"
       showBlurBottom={false}
     >
       <div id="nav" data-section="nav">
@@ -163,7 +162,6 @@ export default function Home() {
             {
               id: "basic",
               badge: "Starter",
-              badgeIcon: "Play",
               price: "$29/month",
               subtitle: "Perfect for beginners starting their journey",
               buttons: [
@@ -230,48 +228,6 @@ export default function Home() {
                 "Analytics and reporting",
                 "Dedicated account manager"
               ]
-            }
-          ]}
-        />
-      </div>
-
-      <div id="metric" data-section="metric">
-        <MetricCardOne
-          title="Our Impact"
-          description="See how we're transforming lives through quality education"
-          tag="Success Metrics"
-          tagIcon={TrendingUp}
-          textboxLayout="default"
-          gridVariant="uniform-all-items-equal"
-          animationType="slide-up"
-          metrics={[
-            {
-              id: "1",
-              value: "50K+",
-              title: "Students",
-              description: "Learners from around the world",
-              icon: Users
-            },
-            {
-              id: "2",
-              value: "200+",
-              title: "Courses",
-              description: "Expert-designed learning paths",
-              icon: BookOpen
-            },
-            {
-              id: "3",
-              value: "95%",
-              title: "Success Rate",
-              description: "Course completion rate",
-              icon: "Award"
-            },
-            {
-              id: "4",
-              value: "4.9/5",
-              title: "Rating",
-              description: "Average student satisfaction",
-              icon: Star
             }
           ]}
         />
